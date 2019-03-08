@@ -1,0 +1,13 @@
+<!--弹窗 用点击外层传过来的参数控制内层的显示-->
+<!--外层-->
+<!--<view class="outer" bindtap="closeToast">-->
+<view>
+    <!--内层-->
+    <view class="outer"  bindtap="closeToast"></view>
+    <view class="inner">
+        <text class="tip">
+            登录小程序需要您的授权，请点击确定调用授权弹窗，并在授权弹窗内点击允许
+        </text>
+        <button class="confirm" bindgetuserinfo="getUserInfo" open-type="getUserInfo">确定</button>
+    </view>
+</view>

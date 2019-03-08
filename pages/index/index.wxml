@@ -1,0 +1,31 @@
+<view>
+    <view>
+        <view style="font-size: 16px;box-shadow: 0rpx 4rpx 4rpx 4rpx #eeeeee;padding: 10rpx 0rpx">博客总数:12</view>
+        <view class="list">
+            <view wx:for="{{blogList}}">
+                <view class="title" id="{{index}}" bindtap="showBlogList">
+                    <view class="category">
+                        <view class="category-tip"></view>
+                        <text>{{item.name}}</text>
+                    </view>
+                    <view class="row"></view>
+                </view>
+                <view hidden="{{item.toogal==true}}">
+                    <view  wx:for="{{item.list}}" class="blogItem">
+                        <view>
+                            {{item.blogTitle}}
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <toast
+            class="toast"
+            wx:if="{{isShow}}"
+            id="toast"
+            flow="{{flowToChild}}"
+            bind:bindTap="closeToast">
+    </toast>
+</view>

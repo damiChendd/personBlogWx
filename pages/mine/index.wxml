@@ -1,0 +1,28 @@
+<view>
+    <view class="intro">
+        <view class="photo">
+            <open-data type="userAvatarUrl"></open-data>
+            <open-data type="userNickName"></open-data>
+        </view>
+    </view>
+    <view class="list">
+        <view wx:for="{{list}}" class="list-item">
+            <view>
+                {{item.name}}
+            </view>
+            <view class="to_right"></view>
+        </view>
+    </view>
+
+    <!--<view>-->
+        <!--<button style="width: 100%;height: 80rpx;background-color: blue" bindtap="showToast">确定</button>-->
+    <!--</view>-->
+    <!--弹窗组件-->
+    <!--<toast-->
+            <!--class="toast"-->
+            <!--wx:if="{{isShow}}"-->
+            <!--id="toast"-->
+            <!--flow="{{flowToChild}}"-->
+            <!--bind:bindTap="closeToast">-->
+    <!--</toast>-->
+</view>

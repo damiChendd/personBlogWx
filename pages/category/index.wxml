@@ -1,0 +1,19 @@
+<view style="background-color: #eeeeee;width: 100%;height: 100%">
+    <!--搜索-->
+    <view class="seacher-outer">
+        <view class="seacher-inner">
+            <text>搜索</text>
+        </view>
+    </view>
+    <!--类别-->
+    <view class="grid-outer">
+        <!--九宫格-->
+        <view wx:for="{{catList}}" class="grid-inner">
+            <navigator url="../categoryBlogList/index">
+                <view class="category-item">
+                    {{item.name}}
+                </view>
+            </navigator>
+        </view>
+    </view>
+</view>

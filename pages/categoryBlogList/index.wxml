@@ -1,0 +1,11 @@
+<view class="list">
+    <!--左右布局-->
+    <!--左边是图片，右边是标题和内容。。。，如果没有图片用默认图片-->
+    <view class="imgBox">
+        <!--<image src="" alt=""></image>-->
+    </view>
+    <view>
+        <view>标题</view>
+        <view>内容</view>
+    </view>
+</view>

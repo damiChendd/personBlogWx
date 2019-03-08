@@ -1,0 +1,19 @@
+.outer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #DCDBDC;
+    z-index: 11;
+    opacity: 0.5;
+}
+.inner{
+    margin: 100rpx 40rpx;
+    position: absolute;
+    z-index: 12;
+    padding: 20px;
+    background-color: white;
+}
+.confirm{
+    margin-top: 20px;
+}
+

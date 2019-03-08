@@ -1,0 +1,14 @@
+/* pages/categoryBlogList/index.wxss */
+.list{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 16px;
+}
+.imgBox{
+    width: 80rpx;
+    height: 80rpx;
+    border: 1px solid #eeeeee;
+}
+.content{
+
+}
